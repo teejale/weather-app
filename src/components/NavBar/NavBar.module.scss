@@ -1,0 +1,47 @@
+@use "../../styles/mixins" as *;
+
+.navBar {
+  @include mainFlex(center);
+  height: 14vh;
+  background-color: #ffff;
+  list-style: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+  gap: 30px;
+
+  li {
+    :hover {
+      font-weight: bold;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .activeLink {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .link {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .navBar {
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 873px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+    font-size: 21px;
+    gap: 200px;
+  }
+}

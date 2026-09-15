@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+.header {
+  background-color: $tertiaryColor;
+  height: 100px;
+  width: 100vw;
+  @include mainFlex(center);
+}

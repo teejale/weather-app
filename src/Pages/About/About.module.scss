@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+.about {
+  background-color: $primaryColor;
+  height: 600px;
+  width: 100vw;
+  @include mainFlex(center);
+}

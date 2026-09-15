@@ -1,0 +1,42 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 14vh;
+  background-color: white;
+  list-style: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+  gap: 30px;
+}
+.navBar li :hover {
+  font-weight: bold;
+}
+.navBar a {
+  text-decoration: none;
+}
+.navBar .activeLink {
+  font-weight: bold;
+  text-decoration: none;
+}
+.navBar .link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 872px) {
+  .navBar {
+    gap: 20px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 873px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+    font-size: 21px;
+    gap: 200px;
+  }
+}/*# sourceMappingURL=NavBar.module.css.map */
