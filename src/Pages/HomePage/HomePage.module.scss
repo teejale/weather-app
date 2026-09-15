@@ -1,10 +1,11 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 .homepage {
-  background-color: $primaryColor;
-  height: 600px;
+  // background-color: $primaryColor;
+  height: 100vh;
   width: 100vw;
   @include mainFlex(center);
+  background-image: url("../../images/c-dustin-K-Iog-Bqf8E-unsplash.jpg");
 }
 
 // @media screen and (max-width: 571px) {
