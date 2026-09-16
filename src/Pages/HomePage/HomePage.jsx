@@ -1,5 +1,6 @@
 import Weather from "../../Weather";
 import styles from "./HomePage.module.scss";
+import NavLinks from "./NavLinks";
 
 // const HomePage = ({ homepage }) => {
 //   if (!homepage) {
@@ -16,6 +17,7 @@ const HomePage = () => {
     <div className={styles.homepage}>
       <h2>Weather</h2>
       <Weather />
+      <NavLinks />
     </div>
   );
 };
