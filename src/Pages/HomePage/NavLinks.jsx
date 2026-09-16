@@ -1,8 +1,8 @@
 import { NavLink } from "react-router";
-
+import styles from "./NavLinks.module.scss";
 const NavLinks = () => {
   return (
-    <nav>
+    <nav className={styles.navLink}>
       <ul>
         <li>
           <NavLink
