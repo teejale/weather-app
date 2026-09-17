@@ -6,7 +6,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import About from "./Pages/About/About";
 import Layout from "./Layout/Layout";
 import Weather from "./Weather";
-import WeatherPage from "./Pages/WeatherPage/WeatherPage";
+import WeatherDetails from "./Pages/WeatherDetails/WeatherDetails";
 
 function App() {
   // const [homepage, setHomepage] = useState(null);
@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />}></Route>
           <Route path="about" element={<About />}></Route>
-          <Route path="weatherpage" element={<WeatherPage />}></Route>
+          <Route path="WeatherDetails" element={<WeatherDetails />}></Route>
         </Route>
       </Routes>
     </>

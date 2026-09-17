@@ -7,12 +7,12 @@ const WeatherCard = () => {
         <ul>
           <li>
             <NavLink
-              to="/weatherpage"
+              to="/WeatherDetails"
               // className={({ isActive }) =>
               //   isActive ? styles.activeLink : styles.link
               // }
             >
-              Weatherpage
+              WeatherDetails
             </NavLink>
           </li>
         </ul>
@@ -21,12 +21,12 @@ const WeatherCard = () => {
         <ul>
           <li>
             <NavLink
-              to="/weatherpage"
+              to="/WeatherDetails"
               // className={({ isActive }) =>
               //   isActive ? styles.activeLink : styles.link
               // }
             >
-              Weatherpage
+              WeatherDetails
             </NavLink>
           </li>
         </ul>
@@ -35,12 +35,12 @@ const WeatherCard = () => {
         <ul>
           <li>
             <NavLink
-              to="/weatherpage"
+              to="/WeatherDetails"
               // className={({ isActive }) =>
               //   isActive ? styles.activeLink : styles.link
               // }
             >
-              Weatherpage
+              WeatherDetails
             </NavLink>
           </li>
         </ul>
