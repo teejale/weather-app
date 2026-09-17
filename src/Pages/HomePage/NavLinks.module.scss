@@ -1,6 +1,11 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
+.wrapper {
+  @include mainFlex(center);
+  gap: 30px;
+}
+
 .navLink {
   @include mainFlex(center);
   background-color: #ffffff;
@@ -12,6 +17,7 @@
     margin: 0;
     li {
       text-align: center;
+
       a {
         text-decoration: none;
       }
