@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-
 import { useWeather } from "../../context/WeatherContext";
+
+import styles from "./SearchInput.module.scss";
 
 const SearchInput = () => {
   const { city, setCity, weatherData, getWeather } = useWeather();
@@ -15,7 +16,7 @@ const SearchInput = () => {
   };
 
   return (
-    <div>
+    <div class={styles.form}>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -23,7 +24,9 @@ const SearchInput = () => {
           value={city}
           onChange={handleInputChange}
         />
-        <button type="submit">Get Weather</button>
+        <div class={styles.searchBtn}>
+          <button type="submit">Get Weather</button>
+        </div>
       </form>
       {weatherData ? (
         <>
