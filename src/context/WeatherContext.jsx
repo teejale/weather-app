@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const WeatherContext = createContext();
@@ -8,7 +8,7 @@ export const useWeather = () => {
   return useContext(WeatherContext);
 };
 
-export const WeatherProvider = (forecast) => {
+const WeatherProvider = ({ children }) => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
@@ -23,20 +23,6 @@ export const WeatherProvider = (forecast) => {
       console.error(error);
     }
   };
-
-  // useEffect(() => {
-  //   getWeather();
-  // }, []);
-
-  // const handleInputChange = (e) => {
-  //   setCity(e.target.value);
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   getWeather();
-  // };
-
   return (
     <WeatherContext.Provider
       value={{
@@ -46,7 +32,9 @@ export const WeatherProvider = (forecast) => {
         getWeather,
       }}
     >
-      {forecast.children}
+      {children}
     </WeatherContext.Provider>
   );
 };
+
+export default WeatherProvider;

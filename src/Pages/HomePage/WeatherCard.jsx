@@ -1,6 +1,9 @@
 import { NavLink } from "react-router";
 import styles from "./WeatherCard.module.scss";
+import { useWeather } from "../../context/WeatherContext";
+
 const WeatherCard = () => {
+  const { city, setCity, weatherData, getWeather } = useWeather();
   return (
     <div class={styles.wrapper}>
       <nav className={styles.navLink}>
@@ -12,12 +15,13 @@ const WeatherCard = () => {
               //   isActive ? styles.activeLink : styles.link
               // }
             >
-              WeatherDetails
+              {/* <h2>{weatherData.city}</h2>
+              <h3>{weatherData.main.temp}°C</h3> */}
             </NavLink>
           </li>
         </ul>
       </nav>
-      <nav className={styles.navLink}>
+      {/* <nav className={styles.navLink}>
         <ul>
           <li>
             <NavLink
@@ -44,7 +48,7 @@ const WeatherCard = () => {
             </NavLink>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
   );
 };
