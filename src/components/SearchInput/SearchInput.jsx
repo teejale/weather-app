@@ -1,26 +1,8 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-const Weather = () => {
-  const [city, setCity] = useState("");
-  const [weatherData, setWeatherData] = useState(null);
+import { useWeather } from "../../context/WeatherContext";
 
-  const getWeather = async () => {
-    try {
-      const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=2b9dfc98aa482ccb98bc81869e11b093`,
-      );
-      setWeatherData(res.data);
-      console.log(res.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    getWeather();
-  }, []);
-
+const SearchInput = () => {
   const handleInputChange = (e) => {
     setCity(e.target.value);
   };
@@ -58,4 +40,4 @@ const Weather = () => {
   );
 };
 
-export default Weather;
+export default SearchInput;

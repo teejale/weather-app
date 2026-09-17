@@ -1,4 +1,4 @@
-import Weather from "../../Weather";
+import Weather from "../../components/SearchInput/SearchInput";
 import styles from "./HomePage.module.scss";
 import WeatherCard from "./WeatherCard";
 
