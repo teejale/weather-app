@@ -12,7 +12,7 @@ const WeatherProvider = ({ children }) => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
-  const getWeather = async () => {
+  const getWeather = async (city) => {
     try {
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=2b9dfc98aa482ccb98bc81869e11b093`,
