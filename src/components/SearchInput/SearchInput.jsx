@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useWeather } from "../../context/WeatherContext";
 
 const SearchInput = () => {
+  const weatherData = useWeather();
+
   const handleInputChange = (e) => {
     setCity(e.target.value);
   };
