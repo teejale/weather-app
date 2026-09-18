@@ -3,6 +3,15 @@
 
 .form {
   @include mainFlex(center);
+  .wrapper {
+    @include mainFlex(center);
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #989894;
+  }
   input {
     @include mainFlex(center);
     border-radius: 5px;

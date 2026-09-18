@@ -1,18 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useWeather } from "../../context/WeatherContext";
-
 import styles from "./SearchInput.module.scss";
 
 const SearchInput = () => {
-  const { city, setCity, weatherData, getWeather } = useWeather();
-
+  const { weatherData, getWeather } = useWeather();
+  const [city, setCity] = useState("");
   const handleInputChange = (e) => {
     setCity(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getWeather();
+    getWeather(city);
   };
 
   return (
@@ -29,7 +28,7 @@ const SearchInput = () => {
         </div>
       </form>
       {weatherData ? (
-        <>
+        <div className={styles.wrapper}>
           <h2>{weatherData.name}</h2>
           <p>Temperature: {weatherData.main.temp}°C</p>
           <p>Description: {weatherData.weather[0].description}</p>
@@ -37,7 +36,7 @@ const SearchInput = () => {
           <p>Humidity : {weatherData.main.humidity}%</p>
           <p>Pressure : {weatherData.main.pressure}</p>
           <p>Wind Speed : {weatherData.wind.speed}m/s</p>
-        </>
+        </div>
       ) : (
         <p>Loading weather data...</p>
       )}

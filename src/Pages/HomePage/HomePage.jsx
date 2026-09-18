@@ -1,12 +1,12 @@
-import Weather from "../../components/SearchInput/SearchInput";
+import SearchInput from "../../components/SearchInput/SearchInput";
+import WeatherCard from "../../components/WeatherCard/WeatherCard";
 import styles from "./HomePage.module.scss";
-import WeatherCard from "./WeatherCard";
 
 const HomePage = () => {
   return (
     <div className={styles.homepage}>
       <h2>Weather</h2>
-      <Weather />
+      <SearchInput />
       <WeatherCard />
     </div>
   );

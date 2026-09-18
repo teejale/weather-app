@@ -6,6 +6,18 @@
   align-items: center;
   flex-direction: column;
 }
+.form .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #989894;
+}
 .form input {
   display: flex;
   justify-content: center;

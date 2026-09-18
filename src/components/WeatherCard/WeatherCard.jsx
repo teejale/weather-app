@@ -1,10 +1,14 @@
 import { NavLink } from "react-router";
 import styles from "./WeatherCard.module.scss";
 import { useWeather } from "../../context/WeatherContext";
+import { useEffect } from "react";
 
 const WeatherCard = () => {
-  const { weatherData } = useWeather();
+  const { weatherData, getWeather } = useWeather();
 
+  useEffect(() => {
+    getWeather("Ivalo");
+  }, []);
   return (
     <div className={styles.wrapper}>
       <nav className={styles.navLink}>
