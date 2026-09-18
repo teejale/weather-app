@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
 .homepage {
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  gap: 30px;
   background-image: url("../../images/c-dustin-K-Iog-Bqf8E-unsplash.jpg");
   opacity: 0.85;
   background-position: center;
   background-size: cover;
+}
+.homepage h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
 }/*# sourceMappingURL=HomePage.module.css.map */

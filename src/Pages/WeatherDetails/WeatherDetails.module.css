@@ -1,1 +1,10 @@
-/*# sourceMappingURL=WeatherDetails.module.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #132575;
+  color: #ffffff;
+}/*# sourceMappingURL=WeatherDetails.module.css.map */

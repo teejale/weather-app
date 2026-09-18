@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.wrapper {
+  @include mainFlex(center);
+  background-color: $secondaryColor;
+  color: #ffffff;
+}
