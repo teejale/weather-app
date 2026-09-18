@@ -16,7 +16,7 @@ const SearchInput = () => {
   };
 
   return (
-    <div class={styles.form}>
+    <div className={styles.form}>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -24,7 +24,7 @@ const SearchInput = () => {
           value={city}
           onChange={handleInputChange}
         />
-        <div class={styles.searchBtn}>
+        <div className={styles.searchBtn}>
           <button type="submit">Get Weather</button>
         </div>
       </form>

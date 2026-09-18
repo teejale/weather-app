@@ -12,11 +12,12 @@ const WeatherProvider = ({ children }) => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
-  const getWeather = async (city) => {
+  const getWeather = async () => {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=2b9dfc98aa482ccb98bc81869e11b093`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`,
       );
+
       setWeatherData(res.data);
       console.log(res.data);
     } catch (error) {

@@ -1,10 +1,10 @@
 import { NavLink } from "react-router";
 import styles from "./WeatherCard.module.scss";
 import { useWeather } from "../../context/WeatherContext";
-import { useState } from "react";
 
 const WeatherCard = () => {
   const { weatherData } = useWeather();
+
   return (
     <div className={styles.wrapper}>
       <nav className={styles.navLink}>
