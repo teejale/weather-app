@@ -4,23 +4,31 @@
 .wrapper {
   @include mainFlex(center);
   gap: 30px;
-}
 
-.navLink {
-  @include mainFlex(center);
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 10px;
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      text-align: center;
+  .navLink {
+    @include mainFlex(center);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        text-align: center;
 
-      a {
-        text-decoration: none;
+        a {
+          text-decoration: none;
+        }
       }
     }
+  }
+
+  .error {
+    background-color: $warningColor;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 15px;
   }
 }

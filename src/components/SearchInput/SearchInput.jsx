@@ -3,7 +3,7 @@ import { useWeather } from "../../context/WeatherContext";
 import styles from "./SearchInput.module.scss";
 
 const SearchInput = () => {
-  const { weatherData, getWeather, error } = useWeather();
+  const { getWeather } = useWeather();
   const [city, setCity] = useState("");
   const handleInputChange = (e) => {
     setCity(e.target.value);
@@ -27,22 +27,6 @@ const SearchInput = () => {
           <button type="submit">Get Weather</button>
         </div>
       </form>
-
-      {error ? (
-        <div className={styles.error}>Could not find city. Try again</div>
-      ) : (
-        ""
-      )}
-      {weatherData && !error ? (
-        <div className={styles.wrapper}>
-          <h2>{weatherData.name}</h2>
-          <p>Temperature: {weatherData.main.temp}°C</p>
-          <p>Description: {weatherData.weather[0].description}</p>
-          <p>Feels like : {weatherData.main.feels_like}°C</p>
-        </div>
-      ) : (
-        <p>Loading weather data...</p>
-      )}
     </div>
   );
 };

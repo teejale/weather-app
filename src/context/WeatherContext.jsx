@@ -10,10 +10,10 @@ export const useWeather = () => {
 
 const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
-  const [error, setError] = useState("");
+  const [error, setError] = useState(null);
   const getWeather = async (city) => {
     try {
-      setError("");
+      setError(null);
       setWeatherData(null);
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`,

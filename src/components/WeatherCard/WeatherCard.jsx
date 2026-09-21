@@ -4,56 +4,31 @@ import { useWeather } from "../../context/WeatherContext";
 import { useEffect } from "react";
 
 const WeatherCard = () => {
-  const { weatherData, getWeather } = useWeather();
+  const { weatherData, error } = useWeather();
 
-  useEffect(() => {
-    getWeather("Ivalo");
-  }, []);
   return (
     <div className={styles.wrapper}>
-      <nav className={styles.navLink}>
-        <ul>
-          <li>
-            <NavLink
-              to="/WeatherDetails"
-              // className={({ isActive }) =>
-              //   isActive ? styles.activeLink : styles.link
-              // }
-            >
-              <h2>{weatherData?.name}</h2>
-              <h3>{weatherData?.main.temp}</h3>
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-      {/* <nav className={styles.navLink}>
-        <ul>
-          <li>
-            <NavLink
-              to="/WeatherDetails"
-              // className={({ isActive }) =>
-              //   isActive ? styles.activeLink : styles.link
-              // }
-            >
-              WeatherDetails
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-      <nav className={styles.navLink}>
-        <ul>
-          <li>
-            <NavLink
-              to="/WeatherDetails"
-              // className={({ isActive }) =>
-              //   isActive ? styles.activeLink : styles.link
-              // }
-            >
-              WeatherDetails
-            </NavLink>
-          </li>
-        </ul>
-      </nav> */}
+      {error ? <div className={styles.error}>Could not find city.</div> : ""}
+      {weatherData && !error ? (
+        <nav className={styles.navLink}>
+          <ul>
+            <li>
+              <NavLink
+                to="/WeatherDetails"
+                // className={({ isActive }) =>
+                //   isActive ? styles.activeLink : styles.link
+                // }
+              >
+                <h2>{weatherData?.name}</h2>
+                <h3>{Math.floor(weatherData?.main.temp)}°C</h3>
+                <h2>{weatherData?.weather[0].description}</h2>
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      ) : (
+        <p className={styles.loading}>Search city to see weather...</p>
+      )}
     </div>
   );
 };
