@@ -10,9 +10,11 @@ export const useWeather = () => {
 
 const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
-
+  const [error, setError] = useState("");
   const getWeather = async (city) => {
     try {
+      setError("");
+      setWeatherData(null);
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`,
       );
@@ -21,12 +23,16 @@ const WeatherProvider = ({ children }) => {
       console.log(res.data);
     } catch (error) {
       console.error(error);
+      setError(error.message);
     }
   };
+
   return (
     <WeatherContext.Provider
       value={{
         weatherData,
+        error,
+        setError,
         getWeather,
       }}
     >

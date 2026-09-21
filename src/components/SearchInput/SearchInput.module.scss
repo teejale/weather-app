@@ -30,3 +30,11 @@
     }
   }
 }
+
+.error {
+  background-color: $warningColor;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
