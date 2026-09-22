@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useWeather } from "../../context/WeatherContext";
 import styles from "./SearchInput.module.scss";
-import { getSavedCity, setSavedCity } from "../../utils/localStorage";
+import { setSavedCity } from "../../utils/localStorage";
 
 const SearchInput = () => {
   const { getWeather } = useWeather();

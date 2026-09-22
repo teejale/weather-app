@@ -1,0 +1,15 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.wrapper {
+  width: 100vw;
+  @include mainFlex(center);
+  .favoriteBtn {
+    // @include mainFlex(flex-start);
+    height: fit-content;
+    padding: 6px;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+}

@@ -1,4 +1,4 @@
-import FavoriteBtn from "../../components/FavoriteBtn";
+import FavoriteBtn from "../../components/FavoriteBtn/FavoriteBtn";
 import { useWeather } from "../../context/WeatherContext";
 import styles from "./WeatherDetails.module.scss";
 import { getSavedCity } from "../../utils/localStorage";
@@ -19,8 +19,8 @@ const WeatherDetails = () => {
 
   return (
     <>
-      <FavoriteBtn />
       <div className={styles.wrapper}>
+        <FavoriteBtn />
         <div>
           <h2>This is weather details</h2>
           <h3>{weatherData?.name}</h3>

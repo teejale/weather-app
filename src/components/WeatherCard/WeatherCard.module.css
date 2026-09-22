@@ -7,8 +7,7 @@
   flex-direction: column;
   gap: 30px;
 }
-
-.navLink {
+.wrapper .navLink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,14 +16,21 @@
   border-radius: 10px;
   padding: 10px;
 }
-.navLink ul {
+.wrapper .navLink ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.navLink ul li {
+.wrapper .navLink ul li {
   text-align: center;
 }
-.navLink ul li a {
+.wrapper .navLink ul li a {
   text-decoration: none;
+}
+.wrapper .error {
+  background-color: #ff5e42;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 15px;
 }/*# sourceMappingURL=WeatherCard.module.css.map */

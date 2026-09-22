@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .favoriteBtn {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px;
+  background-color: #ffffff;
+  border: 2px solid grey;
+  border-radius: 5px;
+}/*# sourceMappingURL=FavoriteBtn.module.css.map */

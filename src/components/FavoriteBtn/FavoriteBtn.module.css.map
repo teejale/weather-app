@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../styles/_variables.scss","FavoriteBtn.module.scss","../../styles/_mixins.scss","FavoriteBtn.module.css"],"names":[],"mappings":"AAAQ,yFAAA;AACA,+FAAA;ACER;EACE,YAAA;ECHA,aAAA;EACA,uBDGkB;ECFlB,mBAAA;EACA,sBAAA;ACIF;AFFE;EAEE,wBAAA;EAAA,mBAAA;EACA,YAAA;EACA,yBAAA;EACA,sBAAA;EACA,kBAAA;AEGJ","file":"FavoriteBtn.module.css"}
