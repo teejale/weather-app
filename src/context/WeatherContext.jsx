@@ -14,7 +14,7 @@ const WeatherProvider = ({ children }) => {
   const getWeather = async (city) => {
     try {
       setError(null);
-      setWeatherData(null);
+      // setWeatherData(null);
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`,
       );

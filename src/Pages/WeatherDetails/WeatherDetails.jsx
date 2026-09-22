@@ -1,10 +1,22 @@
-import { useEffect } from "react";
 import FavoriteBtn from "../../components/FavoriteBtn";
 import { useWeather } from "../../context/WeatherContext";
 import styles from "./WeatherDetails.module.scss";
+import { getSavedCity } from "../../utils/localStorage";
+import { useEffect } from "react";
 
 const WeatherDetails = () => {
-  const { weatherData } = useWeather();
+  const { weatherData, getWeather } = useWeather();
+
+  useEffect(() => {
+    const city = getSavedCity();
+
+    console.log(city);
+
+    if (city) {
+      getWeather(city);
+    }
+  }, []);
+
   return (
     <>
       <FavoriteBtn />

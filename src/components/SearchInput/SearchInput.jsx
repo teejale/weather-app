@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useWeather } from "../../context/WeatherContext";
 import styles from "./SearchInput.module.scss";
+import { getSavedCity, setSavedCity } from "../../utils/localStorage";
 
 const SearchInput = () => {
   const { getWeather } = useWeather();
@@ -11,6 +12,7 @@ const SearchInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSavedCity(city);
     getWeather(city);
   };
 
