@@ -16,7 +16,6 @@
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #989894;
 }
 .form input {
   display: flex;
@@ -24,7 +23,11 @@
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  padding: 7px;
+  padding: 10px;
+  font-size: 16px;
+}
+.form input:hover {
+  border: 0.5px solid #211e1e;
 }
 .form .searchBtn {
   display: flex;
@@ -33,11 +36,15 @@
   flex-direction: column;
 }
 .form .searchBtn button {
+  background-color: #ffffff;
   padding: 10px 25px 10px 25px;
   margin-top: 30px;
-  background-color: #224af5;
   border-radius: 25px;
   font-size: 18px;
+  border: 0.5px solid #dcdce8;
   cursor: pointer;
   border-style: none;
+}
+.form .searchBtn button:hover {
+  border: 0.5px solid #211e1e;
 }/*# sourceMappingURL=SearchInput.module.css.map */

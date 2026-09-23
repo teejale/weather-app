@@ -1,10 +1,12 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 .header {
-  background-color: $tertiaryColor;
-  height: 100px;
   width: 100vw;
-  @include mainFlex(center);
+  @include mainFlex(center, column);
   margin-top: 20px;
-  background-color: white;
+  background-color: $grey;
+  color: $dark;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }

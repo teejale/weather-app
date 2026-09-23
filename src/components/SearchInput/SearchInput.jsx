@@ -26,9 +26,7 @@ const SearchInput = () => {
           onChange={handleInputChange}
         />
         <div className={styles.searchBtn}>
-          <button type="submit" role="button">
-            Get Weather
-          </button>
+          <button type="submit">Get Weather</button>
         </div>
       </form>
     </div>

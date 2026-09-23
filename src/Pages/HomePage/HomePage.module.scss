@@ -1,13 +1,24 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
 .homepage {
+  @include mainFlex(center, column);
   height: fit-content;
   width: 100vw;
   gap: 30px;
+  font-size: 18px;
+  color: #ffffff;
   background-image: url("../../images/c-dustin-K-Iog-Bqf8E-unsplash.jpg");
   @include backgroundImg();
+  .wrapper {
+    background-color: #ffffff;
+    color: $dark;
+    border-radius: 2px;
+    opacity: 0.93;
+    width: 100vw;
+  }
   h2 {
-    @include mainFlex(center);
+    @include mainFlex(center, column);
     padding: 10px 20px 10px 20px;
     border-radius: 6px;
   }

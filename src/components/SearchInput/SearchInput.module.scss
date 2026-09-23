@@ -2,31 +2,38 @@
 @use "../../styles/variables" as *;
 
 .form {
-  @include mainFlex(center);
+  @include mainFlex(center, column);
   .wrapper {
-    @include mainFlex(center);
+    @include mainFlex(center, column);
     margin-top: 30px;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #989894;
   }
   input {
-    @include mainFlex(center);
+    @include mainFlex(center, column);
     border-radius: 5px;
-    padding: 7px;
+    padding: 10px;
+    font-size: 16px;
+    &:hover {
+      border: 0.5px solid $dark;
+    }
   }
   .searchBtn {
-    @include mainFlex(center);
+    @include mainFlex(center, column);
     button {
+      background-color: #ffffff;
       padding: 10px 25px 10px 25px;
       margin-top: 30px;
-      background-color: $primaryColor;
       border-radius: 25px;
       font-size: 18px;
+      border: 0.5px solid $grey;
       cursor: pointer;
       border-style: none;
+      &:hover {
+        border: 0.5px solid $dark;
+      }
     }
   }
 }

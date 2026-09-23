@@ -7,22 +7,30 @@ const WeatherCard = () => {
 
   return (
     <div className={styles.wrapper}>
-      {error ? <div className={styles.error}>Could not find city.</div> : ""}
-      {weatherData && !error ? (
-        <nav className={styles.navLink}>
-          <ul>
-            <li>
-              <NavLink to="/WeatherDetails" role="link">
-                <h2>{weatherData?.name}</h2>
-                <h3>{Math.floor(weatherData?.main.temp)}°C</h3>
-                <h2>{weatherData?.weather[0].description}</h2>
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+      {error ? (
+        <div className={styles.error}>
+          Could not find city. Please try again
+        </div>
       ) : (
-        <p className={styles.loading}>Search city to see weather...</p>
+        ""
       )}
+      <div>
+        {weatherData && !error ? (
+          <nav className={styles.navLink}>
+            <ul>
+              <li>
+                <NavLink to="/WeatherDetails" role="link">
+                  <h2>{weatherData?.name}</h2>
+                  <h3>{Math.floor(weatherData?.main.temp)}°C</h3>
+                  <h2>{weatherData?.weather[0].description}</h2>
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        ) : (
+          <p className={styles.loading}>Search city to see weather...</p>
+        )}
+      </div>
     </div>
   );
 };

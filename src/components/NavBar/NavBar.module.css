@@ -10,6 +10,9 @@
   letter-spacing: 4px;
   text-align: center;
   margin-bottom: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px 10px;
 }
 .navBar ul {
   margin: 0;
@@ -26,10 +29,7 @@
 .navBar .link {
   background-color: #6e88ff;
   border-radius: 5px;
-  padding: 7px;
-}
-.navBar .link hover {
-  padding: 10px;
+  padding: 3px;
 }
 .navBar .activeLink {
   visibility: hidden;

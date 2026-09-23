@@ -3,7 +3,7 @@
 
 .wrapper {
   width: 100vw;
-  @include mainFlex(center);
+  @include mainFlex(center, column);
   margin-top: 30px;
   :hover {
     cursor: pointer;

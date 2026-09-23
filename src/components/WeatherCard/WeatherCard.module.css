@@ -5,16 +5,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
 }
 .wrapper .navLink {
+  background-color: rgb(15, 23, 138);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
+  border: 2px solid #dcdce8;
 }
 .wrapper .navLink ul {
   list-style: none;
@@ -26,11 +26,11 @@
 }
 .wrapper .navLink ul li a {
   text-decoration: none;
+  color: #ffffff;
 }
 .wrapper .error {
-  background-color: #ff5e42;
+  background-color: #daa410;
   color: white;
   padding: 10px;
   border-radius: 3px;
-  margin-top: 15px;
 }/*# sourceMappingURL=WeatherCard.module.css.map */

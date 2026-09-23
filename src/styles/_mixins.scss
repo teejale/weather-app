@@ -1,8 +1,10 @@
-@mixin mainFlex($flexDirection) {
+@use "./variables" as *;
+
+@mixin mainFlex($justifyContent, $flexDirection) {
   display: flex;
-  justify-content: $flexDirection;
+  justify-content: $justifyContent;
   align-items: center;
-  flex-direction: column;
+  flex-direction: $flexDirection;
 }
 
 @mixin backgroundImg() {
@@ -10,4 +12,12 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+@mixin card() {
+  background-color: $cardColor;
+  @include mainFlex(center, column);
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid $grey;
 }

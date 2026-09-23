@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
 .header {
-  background-color: #6e88ff;
-  height: 100px;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  background-color: white;
+  background-color: #dcdce8;
+  color: #211e1e;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=Header.module.css.map */

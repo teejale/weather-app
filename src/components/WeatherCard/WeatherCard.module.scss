@@ -2,14 +2,10 @@
 @use "../../styles/variables" as *;
 
 .wrapper {
-  @include mainFlex(center);
-  gap: 30px;
+  @include mainFlex(center, column);
 
   .navLink {
-    @include mainFlex(center);
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 10px;
+    @include card();
     ul {
       list-style: none;
       padding: 0;
@@ -19,6 +15,7 @@
 
         a {
           text-decoration: none;
+          color: #ffffff;
         }
       }
     }
@@ -29,6 +26,5 @@
     color: white;
     padding: 10px;
     border-radius: 3px;
-    margin-top: 15px;
   }
 }

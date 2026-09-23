@@ -2,13 +2,14 @@
 @use "../../styles/variables" as *;
 
 .navBar {
-  @include mainFlex(center);
-  // height: 10vh;
+  @include mainFlex(center, column);
   background-color: #ffff;
   font-size: 16px;
   letter-spacing: 4px;
   text-align: center;
   margin-bottom: 20px;
+  height: fit-content;
+  margin: 10px 10px;
   ul {
     margin: 0;
     padding: 0;
@@ -26,10 +27,7 @@
   .link {
     background-color: $tertiaryColor;
     border-radius: 5px;
-    padding: 7px;
-    hover {
-      padding: 10px;
-    }
+    padding: 3px;
   }
 
   .activeLink {
