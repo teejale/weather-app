@@ -28,7 +28,7 @@ const FavoriteBtn = () => {
       <FontAwesomeIcon
         icon={faStar}
         onClick={handleToggle}
-        className={`{styles.FavoriteBtn} ${isActive ? styles.active : styles.notActive}`}
+        className={isActive ? styles.active : styles.notActive}
         onMouseEnter={onHover}
         onMouseLeave={onLeave}
         role="button"

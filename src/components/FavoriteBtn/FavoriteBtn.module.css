@@ -8,9 +8,6 @@
   flex-direction: column;
   margin-top: 5px;
 }
-.wrapper .favoriteBtn {
-  color: white;
-}
 .wrapper :hover {
   cursor: pointer;
 }
@@ -18,5 +15,5 @@
   color: yellow;
 }
 .wrapper .notActive {
-  color: black;
+  color: white;
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */
