@@ -1,27 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
 .navBar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 14vh;
   background-color: white;
-  list-style: none;
   font-size: 16px;
-  letter-spacing: 3px;
-  gap: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.navBar li :hover {
-  font-weight: bold;
+.navBar ul {
+  margin: 0;
+  padding: 0;
+}
+.navBar li {
+  list-style: none;
 }
 .navBar a {
   text-decoration: none;
-}
-.navBar .activeLink {
-  font-weight: bold;
-  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
 }
 .navBar .link {
-  text-decoration: none;
+  background-color: #6e88ff;
+  border-radius: 5px;
+  padding: 7px;
+}
+.navBar .link hover {
+  padding: 10px;
+}
+.navBar .activeLink {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 872px) {

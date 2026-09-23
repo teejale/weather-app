@@ -34,7 +34,7 @@ const FavoriteBtn = () => {
         role="button"
       />
 
-      {isActive ? "remove favorite" : "add favorite"}
+      {isActive ? "Remove favorite" : "Add favorite"}
     </div>
   );
 };

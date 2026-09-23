@@ -4,15 +4,17 @@
 .wrapper {
   width: 100vw;
   @include mainFlex(center);
-  margin-top: 5px;
+  margin-top: 30px;
   :hover {
     cursor: pointer;
   }
 
   .active {
     color: yellow;
+    font-size: 25px;
   }
   .notActive {
     color: white;
+    font-size: 22.5px;
   }
 }

@@ -6,9 +6,10 @@
   width: 100vw;
   gap: 30px;
   background-image: url("../../images/c-dustin-K-Iog-Bqf8E-unsplash.jpg");
-  opacity: 0.85;
+  opacity: 0.8;
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 .homepage h2 {
   display: flex;

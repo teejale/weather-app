@@ -5,9 +5,7 @@
   width: 100vw;
   gap: 30px;
   background-image: url("../../images/c-dustin-K-Iog-Bqf8E-unsplash.jpg");
-  opacity: 0.85;
-  background-position: center;
-  background-size: cover;
+  @include backgroundImg();
   h2 {
     @include mainFlex(center);
     padding: 10px 20px 10px 20px;

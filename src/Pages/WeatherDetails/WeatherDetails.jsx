@@ -22,8 +22,7 @@ const WeatherDetails = () => {
       <div className={styles.wrapper}>
         <FavoriteBtn />
         <div className={styles.container}>
-          <h2>This is weather details</h2>
-          <h3>{weatherData?.name}</h3>
+          <h2>{weatherData?.name}</h2>
           <p>Temperature: {weatherData?.main?.temp}°C</p>
           <p>Description: {weatherData?.weather?.[0]?.description}</p>
           <p>Feels like : {weatherData?.main?.feels_like}°C</p>

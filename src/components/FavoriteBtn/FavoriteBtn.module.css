@@ -6,14 +6,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 .wrapper :hover {
   cursor: pointer;
 }
 .wrapper .active {
   color: yellow;
+  font-size: 25px;
 }
 .wrapper .notActive {
   color: white;
+  font-size: 22.5px;
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */
