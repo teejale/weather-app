@@ -4,5 +4,16 @@
 .wrapper {
   @include mainFlex(center);
   background-color: $secondaryColor;
-  color: #ffffff;
+  color: #000000;
+  background-image: url("../../images/jerome-pqfkN8WcdR8-unsplash.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  .container {
+    background-color: white;
+    border-radius: 3px;
+    padding: 15px;
+  }
 }
+
+// src\images\jerome-pqfkN8WcdR8-unsplash.jpg

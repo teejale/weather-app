@@ -12,6 +12,7 @@ const NavBar = () => {
               className={({ isActive }) =>
                 isActive ? styles.activeLink : styles.link
               }
+              role="link"
             >
               Home
             </NavLink>

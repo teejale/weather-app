@@ -6,12 +6,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 5px;
 }
 .wrapper .favoriteBtn {
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 6px;
-  background-color: #ffffff;
-  border: 2px solid grey;
-  border-radius: 5px;
+  color: white;
+}
+.wrapper :hover {
+  cursor: pointer;
+}
+.wrapper .active {
+  color: yellow;
+}
+.wrapper .notActive {
+  color: black;
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */

@@ -12,7 +12,7 @@ const WeatherCard = () => {
         <nav className={styles.navLink}>
           <ul>
             <li>
-              <NavLink to="/WeatherDetails">
+              <NavLink to="/WeatherDetails" role="link">
                 <h2>{weatherData?.name}</h2>
                 <h3>{Math.floor(weatherData?.main.temp)}°C</h3>
                 <h2>{weatherData?.weather[0].description}</h2>
