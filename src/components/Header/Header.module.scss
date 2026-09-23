@@ -3,10 +3,12 @@
 .header {
   width: 100vw;
   @include mainFlex(center, column);
-  margin-top: 20px;
   background-color: $grey;
   color: $dark;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+  h1 {
+    margin: 0;
+  }
 }

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
 .layout {
   width: 100%;
+  font-family: "Merriweather", sans-serif;
 }/*# sourceMappingURL=Layout.module.css.map */

@@ -6,10 +6,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
   background-color: #dcdce8;
   color: #211e1e;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+}
+.header h1 {
+  margin: 0;
 }/*# sourceMappingURL=Header.module.css.map */
