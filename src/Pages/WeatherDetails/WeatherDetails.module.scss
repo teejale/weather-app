@@ -19,3 +19,29 @@
 }
 
 // src\images\jerome-pqfkN8WcdR8-unsplash.jpg
+@media screen and (min-width: 500px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .wrapper {
+    font-size: larger;
+    @include mainFlex(flex-end, row);
+    position: relative;
+    .container {
+      position: absolute;
+      left: 150px;
+      height: 80vh;
+      width: 350px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    height: 90vh;
+    width: 450px;
+    font-size: larger;
+  }
+}

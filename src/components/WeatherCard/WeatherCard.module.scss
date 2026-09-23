@@ -6,6 +6,9 @@
 
   .navLink {
     @include card();
+    &:hover {
+      cursor: pointer;
+    }
     ul {
       list-style: none;
       padding: 0;
@@ -20,11 +23,23 @@
       }
     }
   }
-
   .error {
     background-color: $warningColor;
     color: white;
     padding: 10px;
     border-radius: 3px;
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .navLink {
+    width: 300px;
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navLink {
+    width: 400px;
+    font-size: larger;
   }
 }
