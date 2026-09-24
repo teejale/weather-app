@@ -7,7 +7,7 @@ export function setSavedCity(city) {
 }
 
 export function getFavorites() {
-  const favoriteCities = localStorage.getItem("favorites") || "";
+  const favoriteCities = localStorage.getItem("favorites") || "[]";
   return JSON.parse(favoriteCities);
 }
 
