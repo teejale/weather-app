@@ -7,20 +7,20 @@ import { useEffect } from "react";
 const WeatherDetails = () => {
   const { weatherData, getWeather } = useWeather();
 
-  useEffect(() => {
-    const city = getSavedCity();
+  const city = getSavedCity();
 
+  useEffect(() => {
     console.log(city);
 
     if (city) {
       getWeather(city);
     }
-  }, []);
+  }, [city]);
 
   return (
     <>
       <div className={styles.wrapper}>
-        <FavoriteBtn />
+        <FavoriteBtn city={city} />
         <div className={styles.container}>
           <h2>{weatherData?.name}</h2>
           <p>Temperature: {weatherData?.main?.temp}°C</p>
