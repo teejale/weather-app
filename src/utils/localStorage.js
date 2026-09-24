@@ -11,6 +11,6 @@ export function getFavorites() {
   return JSON.parse(favoriteCities);
 }
 
-export function setFavorites() {
+export function setFavorites(favorites) {
   localStorage.setItem("favorites", JSON.stringify(favorites));
 }

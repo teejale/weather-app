@@ -1,6 +1,8 @@
 import { createContext, useContext } from "react";
 import { useState } from "react";
 import axios from "axios";
+const baseUrl = (city) =>
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
 
 const WeatherContext = createContext();
 
@@ -11,20 +13,29 @@ export const useWeather = () => {
 const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
-  const getWeather = async (city) => {
-    try {
-      setError(null);
-      // setWeatherData(null);
-      const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`,
-      );
+  const [favorites, setFavorites] = useState([]);
+  const [favoritesWeather, setFavoritesWeather] = useState([]);
 
-      setWeatherData(res.data);
-      console.log(res.data);
+  const fetchWeather = async (city) => {
+    try {
+      const res = await axios.get(baseUrl(city));
+      return res.data;
     } catch (error) {
-      console.error(error);
       setError(error.message);
+      return null;
     }
+  };
+
+  const getWeather = async (city) => {
+    setError(null);
+    const data = await fetchWeather(city);
+    setWeatherData(data);
+  };
+
+  const getFavoritesWeather = async (cities) => {
+    setError(null);
+    const data = await Promise.all(cities.map((city) => fetchWeather(city)));
+    setFavoritesWeather(data.filter((weather) => weather !== null));
   };
 
   return (
@@ -33,7 +44,11 @@ const WeatherProvider = ({ children }) => {
         weatherData,
         error,
         setError,
+        favorites,
+        setFavorites,
         getWeather,
+        favoritesWeather,
+        getFavoritesWeather,
       }}
     >
       {children}
