@@ -6,11 +6,11 @@ export function setSavedCity(city) {
   localStorage.setItem("city", city);
 }
 
-export function getFavorites() {
-  const favoriteCities = localStorage.getItem("favorites") || "[]";
+export function getFavoriteCity() {
+  const favoriteCities = localStorage.getItem("favorites") || "";
   return JSON.parse(favoriteCities);
 }
 
-export function setFavorites() {
-  localStorage.setItem("favorites", favorite);
+export function setFavoriteCity() {
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 }
