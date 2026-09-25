@@ -16,6 +16,7 @@ const WeatherCard = () => {
                   <h2>{weatherData?.name}</h2>
                   <h3>{Math.floor(weatherData?.main.temp)}°C</h3>
                   <h2>{weatherData?.weather[0].description}</h2>
+                  <p>Click to see more details</p>
                 </NavLink>
               </li>
             </ul>

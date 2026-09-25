@@ -5,9 +5,20 @@
   @include mainFlex(center, column);
 
   .navLink {
+    opacity: 0.96;
     @include card();
+    font-size: 1rem;
+    @media screen and (min-width: 782px) {
+      width: 300px;
+      font-size: 1.2rem;
+    }
+    @media screen and (min-width: 900px) {
+      width: 400px;
+      font-size: 1.3rem;
+    }
     &:hover {
       cursor: pointer;
+      opacity: 1;
     }
     ul {
       list-style: none;
@@ -22,18 +33,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (min-width: 782px) {
-  .navLink {
-    width: 300px;
-    font-size: larger;
-  }
-}
-@media screen and (min-width: 900px) {
-  .navLink {
-    width: 400px;
-    font-size: larger;
   }
 }

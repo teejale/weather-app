@@ -26,7 +26,7 @@ const SearchInput = () => {
     <div className={styles.form}>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter city name to search for weather
+          Enter city name to search
           <input
             id="searchField"
             type="text"
@@ -35,11 +35,18 @@ const SearchInput = () => {
             onChange={handleInputChange}
           />
         </label>
-        <label className={styles.errorMsg} htmlFor="searchField">
-          {isFormValid && !error ? "" : <div> Could not find city</div>}
+        <label htmlFor="searchField">
+          {isFormValid && !error ? (
+            ""
+          ) : (
+            <div className={styles.errorMsg}>
+              {" "}
+              <p>Could not find city</p>
+            </div>
+          )}
         </label>
         <div className={styles.searchBtn}>
-          <button type="submit">Get Weather</button>
+          <button type="submit">Search</button>
         </div>
       </form>
     </div>

@@ -6,7 +6,6 @@
   height: fit-content;
   width: 100vw;
   gap: 30px;
-  font-size: 18px;
   color: #ffffff;
   background-image: url("../../images/jerome-pqfkN8WcdR8-unsplash.jpg");
   @include backgroundImg();
@@ -16,11 +15,33 @@
     border-radius: 2px;
     opacity: 0.93;
     width: 100vw;
+    margin: 0px 0px 100px 0px;
   }
   h2 {
     @include mainFlex(center, column);
     padding: 10px 20px 10px 20px;
     border-radius: 6px;
+    font-size: 1.2rem;
+    @media screen and (min-width: 782px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .favoritesWrapper {
+    @include mainFlex(center, column);
+    border: 2px solid $grey;
+    height: fit-content;
+
+    .favoritesCards {
+      height: fit-content;
+      background-color: $grey;
+      color: $dark;
+      padding: 10px;
+      text-align: center;
+    }
   }
 }
 

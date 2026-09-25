@@ -9,7 +9,6 @@
   height: fit-content;
   width: 100vw;
   gap: 30px;
-  font-size: 18px;
   color: #ffffff;
   background-image: url("../../images/jerome-pqfkN8WcdR8-unsplash.jpg");
   opacity: 0.8;
@@ -24,6 +23,7 @@
   border-radius: 2px;
   opacity: 0.93;
   width: 100vw;
+  margin: 0px 0px 100px 0px;
 }
 .homepage h2 {
   display: flex;
@@ -32,4 +32,32 @@
   flex-direction: column;
   padding: 10px 20px 10px 20px;
   border-radius: 6px;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 782px) {
+  .homepage h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .homepage h2 {
+    font-size: 1.4rem;
+  }
+}
+.homepage .favoritesWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #dcdce8;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homepage .favoritesWrapper .favoritesCards {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #dcdce8;
+  color: #211e1e;
+  padding: 10px;
+  text-align: center;
 }/*# sourceMappingURL=HomePage.module.css.map */
