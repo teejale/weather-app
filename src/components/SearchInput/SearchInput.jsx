@@ -4,16 +4,22 @@ import styles from "./SearchInput.module.scss";
 import { setSavedCity } from "../../utils/localStorage";
 
 const SearchInput = () => {
-  const { getWeather } = useWeather();
+  const { getWeather, error } = useWeather();
   const [city, setCity] = useState("");
+  const [isFormValid, setIsFormValid] = useState(true);
   const handleInputChange = (e) => {
-    setCity(e.target.value);
+    const userInput = e.target.value;
+    setCity(userInput);
+    setIsFormValid(!/\d/.test(userInput));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSavedCity(city);
-    getWeather(city);
+    if (isFormValid) {
+      setSavedCity(city);
+      getWeather(city);
+      return;
+    }
   };
 
   return (
@@ -22,11 +28,15 @@ const SearchInput = () => {
         <label>
           Enter city name to search for weather
           <input
+            id="searchField"
             type="text"
             placeholder="City"
             value={city}
             onChange={handleInputChange}
           />
+        </label>
+        <label className={styles.errorMsg} htmlFor="searchField">
+          {isFormValid && !error ? "" : <div> Could not find city</div>}
         </label>
         <div className={styles.searchBtn}>
           <button type="submit">Get Weather</button>

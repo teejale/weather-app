@@ -31,12 +31,6 @@
   text-decoration: none;
   color: #ffffff;
 }
-.wrapper .error {
-  background-color: #daa410;
-  color: white;
-  padding: 10px;
-  border-radius: 3px;
-}
 
 @media screen and (min-width: 782px) {
   .navLink {

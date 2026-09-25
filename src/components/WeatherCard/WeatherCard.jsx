@@ -7,13 +7,6 @@ const WeatherCard = () => {
 
   return (
     <div className={styles.wrapper}>
-      {error ? (
-        <div className={styles.error}>
-          Could not find city. Please try again
-        </div>
-      ) : (
-        ""
-      )}
       <div>
         {weatherData && !error ? (
           <nav className={styles.navLink}>
@@ -28,7 +21,7 @@ const WeatherCard = () => {
             </ul>
           </nav>
         ) : (
-          <p className={styles.loading}>Search city to see weather...</p>
+          ""
         )}
       </div>
     </div>

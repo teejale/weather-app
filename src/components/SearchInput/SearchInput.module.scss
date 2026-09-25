@@ -36,4 +36,8 @@
       }
     }
   }
+  .errorMsg {
+    color: $warningColor;
+    font-weight: bolder;
+  }
 }
