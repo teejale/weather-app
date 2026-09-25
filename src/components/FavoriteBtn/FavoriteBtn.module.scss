@@ -2,9 +2,11 @@
 @use "../../styles/variables" as *;
 
 .wrapper {
-  width: 100vw;
-  @include mainFlex(center, column);
+  // width: 100vw;
+  height: fit-content;
+  @include mainFlex(space-between, column);
   margin-top: 30px;
+
   :hover {
     cursor: pointer;
   }
@@ -14,7 +16,7 @@
     font-size: 25px;
   }
   .notActive {
-    color: white;
+    color: #000000;
     font-size: 22.5px;
   }
 }

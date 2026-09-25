@@ -13,7 +13,7 @@ export const useWeather = () => {
 const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
-  const [favorites, setFavorites] = useState([]);
+
   const [favoritesWeather, setFavoritesWeather] = useState([]);
 
   const fetchWeather = async (city) => {
@@ -44,8 +44,6 @@ const WeatherProvider = ({ children }) => {
         weatherData,
         error,
         setError,
-        favorites,
-        setFavorites,
         getWeather,
         favoritesWeather,
         getFavoritesWeather,

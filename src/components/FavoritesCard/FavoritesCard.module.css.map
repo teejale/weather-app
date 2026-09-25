@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../styles/_variables.scss","FavoritesCard.module.scss","../../styles/_mixins.scss","FavoritesCard.module.css"],"names":[],"mappings":"AAAQ,yFAAA;AACA,+FAAA;ACER;ECAE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBDF0B;EAC1B,QAAA;EACA,eAAA;AEGF;AFFE;EACE,yBDEG;ECDH,cDGG;ECFH,wBAAA;EAAA,mBAAA;EACA,kBAAA;EACA,kBAAA;EACA,YAAA;AEIJ","file":"FavoritesCard.module.css"}

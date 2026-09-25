@@ -1,0 +1,16 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.favoritesWrapper {
+  @include mainFlex(center, column);
+  gap: 5px;
+  flex-wrap: wrap;
+  .favoritesCard {
+    background-color: $grey;
+    color: $dark;
+    height: fit-content;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+  }
+}

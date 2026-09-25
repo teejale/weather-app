@@ -1,7 +1,6 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 .header {
-  width: 100vw;
   @include mainFlex(center, column);
   background-color: $grey;
   color: $dark;

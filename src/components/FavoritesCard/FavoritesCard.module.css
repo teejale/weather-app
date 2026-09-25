@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
-.header {
+.favoritesWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.favoritesWrapper .favoritesCard {
   background-color: #dcdce8;
   color: #211e1e;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-.header h1 {
-  margin: 0;
-}/*# sourceMappingURL=Header.module.css.map */
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px;
+}/*# sourceMappingURL=FavoritesCard.module.css.map */

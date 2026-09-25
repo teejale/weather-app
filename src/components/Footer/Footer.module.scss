@@ -3,7 +3,6 @@
 .footer {
   background-color: $grey;
   height: 100px;
-  width: 100vw;
   @include mainFlex(center, column);
   a {
     text-decoration: none;
