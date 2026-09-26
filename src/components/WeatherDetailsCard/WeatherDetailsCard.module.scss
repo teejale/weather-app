@@ -1,0 +1,33 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.container {
+  @include mainFlex(center, column);
+  gap: 10px;
+  @include card();
+  margin-top: 30px;
+  background-color: $cardColor;
+  color: $white;
+  font-size: 1rem;
+  margin: 30px;
+  :nth-child(2) {
+    margin-top: 3px;
+  }
+  :nth-child(3) {
+    margin-top: -10px;
+  }
+
+  @media screen and (min-width: 500px) {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 782px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 900px) {
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+    @include mainFlex(flex-start, row);
+    // height: 300px;
+  }
+}

@@ -25,9 +25,13 @@
   }
 
   .link {
-    background-color: $tertiaryColor;
+    background-color: $white;
     border-radius: 5px;
+    color: $dark;
     padding: 3px;
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   .activeLink {

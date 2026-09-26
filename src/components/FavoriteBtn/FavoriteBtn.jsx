@@ -4,7 +4,12 @@ import { setFavorites, getFavorites } from "../../utils/localStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 
-const FavoriteBtn = ({ city, remove = false, favoriteChange }) => {
+const FavoriteBtn = ({
+  city,
+  favorite = false,
+  remove = false,
+  favoriteChange,
+}) => {
   const [isActive, setIsActive] = useState(() => {
     const favoriteCities = getFavorites();
     return favoriteCities.includes(city);
@@ -12,7 +17,6 @@ const FavoriteBtn = ({ city, remove = false, favoriteChange }) => {
 
   const handleToggle = () => {
     const favoriteCities = getFavorites();
-
     if (remove) {
       if (favoriteCities.includes(city)) {
         const removeFavorites = favoriteCities.filter(
@@ -27,8 +31,11 @@ const FavoriteBtn = ({ city, remove = false, favoriteChange }) => {
       }
       return;
     }
-    if (favoriteCities.length >= 4) {
+    if (favoriteCities.length >= 4 && !favoriteCities.includes(city)) {
       alert("you cant have more than four favorites");
+      return;
+    }
+    if (favoriteCities.includes(city)) {
       return;
     }
     const addFavorites = [...favoriteCities, city];
@@ -45,11 +52,7 @@ const FavoriteBtn = ({ city, remove = false, favoriteChange }) => {
         role="button"
       />
 
-      {remove
-        ? "Remove favorite"
-        : isActive
-          ? "Remove favorite"
-          : "Add favorite"}
+      {remove ? "Remove favorite" : isActive ? "Favorited" : "Add favorite"}
     </div>
   );
 };

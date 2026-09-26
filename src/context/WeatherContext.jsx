@@ -34,7 +34,15 @@ const WeatherProvider = ({ children }) => {
 
   const getFavoritesWeather = async (cities) => {
     setError(null);
-    const data = await Promise.all(cities.map((city) => fetchWeather(city)));
+    const data = await Promise.all(
+      cities.map(async (city) => {
+        const data = await fetchWeather(city);
+        if (data) {
+          data.savedCity = city;
+        }
+        return data;
+      }),
+    );
     setFavoritesWeather(data.filter((weather) => weather !== null));
   };
 
