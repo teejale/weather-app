@@ -1,19 +1,23 @@
-# React + Vite
+This is a weather app for my school project, the purpose of the project was to learn how to create an application with REACT. The API to fetch the weather data is from http://openweathermap.org. To get your own API key you need to have an account. It can take up to 2 hours for your key to activate.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this weather app the user can search a city to see the current weather. The user can also get navigated to a more detailed page of the weather for the searched city. There is also a favorites button so the user can save up to 4 favorite cities which will appear on the homepage. So when the user comes back to the page the listed favorites are there. I used web storages API such as localstorage so the users data is saved locally on the computer.
 
-Currently, two official plugins are available:
+# installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+install dependencies:
 
-## React Compiler
+```
+npm install
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+create .env file in project root based on .env.example:
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+```
+VITE_APP_ID=YOUR_OPENWEATHER_API_KEY
+```
 
-## Expanding the ESLint configuration
+Start the dev server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm run dev
+```
