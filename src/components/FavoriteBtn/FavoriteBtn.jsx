@@ -6,6 +6,7 @@ import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 
 const FavoriteBtn = ({
   city,
+  className = "",
   favorite = false,
   remove = false,
   favoriteChange,
@@ -44,7 +45,7 @@ const FavoriteBtn = ({
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${className}`}>
       <FontAwesomeIcon
         icon={solidStar}
         onClick={handleToggle}
@@ -52,7 +53,7 @@ const FavoriteBtn = ({
         role="button"
       />
 
-      {remove ? "Remove favorite" : isActive ? "Favorited" : "Add favorite"}
+      {remove ? "Remove" : isActive ? "Added" : "Add"}
     </div>
   );
 };

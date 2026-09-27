@@ -26,7 +26,7 @@ const SearchInput = () => {
     <div className={styles.form}>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter city name to search
+          <p>Enter city name to search</p>
           <input
             id="searchField"
             type="text"

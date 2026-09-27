@@ -1,19 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
+.favoritesWrapper h2 {
+  font-size: 2rem;
+  color: #211e1e;
+  font-weight: 800;
+  word-spacing: 1.2rem;
+}
+@media screen and (min-width: 900px) {
+  .favoritesWrapper h2 {
+    font-size: 2.3rem;
+  }
+}
+.favoritesWrapper .homeFavoriteBtn {
+  cursor: pointer;
+  margin-top: 0;
+}
 .favoritesWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
-  flex-wrap: wrap;
 }
 .favoritesWrapper .favoritesCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   background-color: #dcdce8;
   color: #211e1e;
-  height: -moz-fit-content;
-  height: fit-content;
   border-radius: 5px;
   text-align: center;
-  padding: 7px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 200px;
+}
+.favoritesWrapper .favoritesCard p {
+  background-color: blue;
+}
+.favoritesWrapper .favoritesCard:last-child {
+  margin-bottom: 50px;
+}
+.favoritesWrapper .favoritesCard .description {
+  gap: 10px;
+  margin-left: 30px;
+}
+.favoritesWrapper .favoritesCard .icons {
+  margin-right: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+}
+@media screen and (min-width: 746px) {
+  .favoritesWrapper .favoritesCard {
+    width: 350px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .favoritesWrapper .favoritesCard {
+    width: 450px;
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=FavoritesCard.module.css.map */

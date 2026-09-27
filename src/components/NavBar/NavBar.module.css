@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
 .navBar {
   display: flex;
   justify-content: center;
@@ -25,11 +26,13 @@
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
-}
-.navBar .link {
-  background-color: #6e88ff;
+  background-color: #ffffff;
   border-radius: 5px;
+  color: #211e1e;
   padding: 3px;
+}
+.navBar a:hover {
+  font-weight: bold;
 }
 .navBar .activeLink {
   visibility: hidden;

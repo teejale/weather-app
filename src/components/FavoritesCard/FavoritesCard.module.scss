@@ -2,15 +2,56 @@
 @use "../../styles/variables" as *;
 
 .favoritesWrapper {
+  h2 {
+    font-size: 2rem;
+    color: $dark;
+    font-weight: 800;
+    word-spacing: 1.2rem;
+    @media screen and (min-width: 900px) {
+      font-size: 2.3rem;
+    }
+  }
+  .homeFavoriteBtn {
+    cursor: pointer;
+    margin-top: 0;
+  }
   @include mainFlex(center, column);
-  gap: 5px;
-  flex-wrap: wrap;
   .favoritesCard {
+    @include mainFlex(space-between, row);
     background-color: $grey;
     color: $dark;
-    height: fit-content;
     border-radius: 5px;
     text-align: center;
-    padding: 7px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 200px;
+
+    & p {
+      background-color: blue;
+    }
+    &:last-child {
+      margin-bottom: 50px;
+    }
+
+    .description {
+      gap: 10px;
+      margin-left: 30px;
+    }
+
+    .icons {
+      margin-right: 15px;
+      height: fit-content;
+      align-self: center;
+      @include mainFlex(center, column);
+      gap: 1px;
+    }
+    @media screen and (min-width: 746px) {
+      width: 350px;
+      font-size: 1.2rem;
+    }
+    @media screen and (min-width: 900px) {
+      width: 450px;
+      font-size: 1.3rem;
+    }
   }
 }

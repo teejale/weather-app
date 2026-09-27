@@ -2,11 +2,9 @@
 @use "../../styles/variables" as *;
 
 .wrapper {
-  // width: 100vw;
   height: fit-content;
   @include mainFlex(space-between, column);
   margin-top: 30px;
-
   .active {
     color: yellow;
     font-size: 25px;

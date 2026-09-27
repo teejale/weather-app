@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(15, 23, 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #dcdce8;
+  background-color: rgb(15, 23, 138);
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 30px;
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container :nth-child(2) {
+  margin-top: 20px;
+}
+.container :nth-child(3) {
+  margin-top: -10px;
+}
+@media screen and (min-width: 500px) {
+  .container {
+    font-size: 1.2rem;
+    width: 350px;
+  }
+}
+@media screen and (min-width: 782px) {
+  .container {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    margin-top: 100px;
+  }
+}
+
+.homeFavoriteBtn {
+  cursor: pointer !important;
+}/*# sourceMappingURL=WeatherDetailsCard.module.css.map */

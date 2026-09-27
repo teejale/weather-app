@@ -2,6 +2,7 @@
 @use "../../styles/variables" as *;
 
 .wrapper {
+  min-height: 100vh;
   @include mainFlex(flex-start, column);
   text-align: center;
   font-size: 1.2rem;

@@ -2,18 +2,21 @@
 @use "../../styles/variables" as *;
 
 .wrapper {
+  position: relative;
   @include mainFlex(center, column);
-
+  margin: 0;
+  padding: 0;
   .navLink {
+    width: 300px;
     opacity: 0.96;
     @include card();
     font-size: 1rem;
-    @media screen and (min-width: 782px) {
-      width: 300px;
+    @media screen and (min-width: 746px) {
+      width: 350px;
       font-size: 1.2rem;
     }
     @media screen and (min-width: 900px) {
-      width: 400px;
+      width: 450px;
       font-size: 1.3rem;
     }
     &:hover {

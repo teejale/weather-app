@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
 .wrapper {
   height: -moz-fit-content;
   height: fit-content;
@@ -9,9 +10,6 @@
   flex-direction: column;
   margin-top: 30px;
 }
-.wrapper :hover {
-  cursor: pointer;
-}
 .wrapper .active {
   color: yellow;
   font-size: 25px;
@@ -19,4 +17,15 @@
 .wrapper .notActive {
   color: #000000;
   font-size: 22.5px;
+}
+.wrapper .notActive :hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */

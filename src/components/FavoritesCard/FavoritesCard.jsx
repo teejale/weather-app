@@ -25,20 +25,25 @@ const FavoritesCard = () => {
       <h2>Favorites</h2>
       {favoritesWeather.map((weather) => (
         <div key={weather.id} className={styles.favoritesCard}>
-          <h3>{weather.name}</h3>
-          <h3>{weather.main.temp}°C</h3>
-          <h3>{weather.weather[0].description}</h3>
-          <img
-            src={getWeatherIcon(weather.weather[0].icon)}
-            alt="weather icon"
-            className={styles.weatherIcon}
-          />{" "}
-          <FavoriteBtn
-            city={weather.savedCity}
-            remove={true}
-            favorite={true}
-            favoriteChange={refreshFavorites}
-          />
+          <div className={styles.description}>
+            <h3>{weather.name}</h3>
+            <h3>{weather.main.temp}°C</h3>
+            <h3>{weather.weather?.[0]?.description}</h3>
+          </div>
+          <div className={styles.icons}>
+            <img
+              src={getWeatherIcon(weather.weather?.[0]?.icon)}
+              alt="weather icon"
+              className={styles.weatherIcon}
+            />{" "}
+            <FavoriteBtn
+              city={weather.savedCity}
+              remove={true}
+              favorite={true}
+              favoriteChange={refreshFavorites}
+              className={styles.homeFavoriteBtn}
+            />
+          </div>
         </div>
       ))}
     </div>
