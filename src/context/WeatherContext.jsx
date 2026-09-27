@@ -2,7 +2,7 @@ import { createContext, useContext } from "react";
 import { useState } from "react";
 import axios from "axios";
 const baseUrl = (city) =>
-  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_APP_ID}`;
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.OPENWEATHER_API_KEY}`;
 
 const WeatherContext = createContext();
 

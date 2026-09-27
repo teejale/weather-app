@@ -13,7 +13,7 @@ npm install
 create .env file in project root based on .env.example:
 
 ```
-VITE_APP_ID=YOUR_OPENWEATHER_API_KEY
+OPENWEATHER_API_KEY=YOUR_OPENWEATHER_API_KEY
 ```
 
 Start the dev server:
