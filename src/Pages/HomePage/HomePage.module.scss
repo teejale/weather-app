@@ -3,6 +3,7 @@
 
 .homepage {
   @include mainFlex(center, column);
+  min-height: 100vh;
   gap: 30px;
   color: #ffffff;
   background-image: url("../../images/jerome-pqfkN8WcdR8-unsplash.jpg");
