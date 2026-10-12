@@ -18,7 +18,7 @@
   font-size: 1rem;
   color: #211e1e;
   font-weight: 800;
-  word-spacing: 1.2rem;
+  word-spacing: 0.1rem;
 }
 @media screen and (min-width: 900px) {
   .favoritesWrapper h2 {
