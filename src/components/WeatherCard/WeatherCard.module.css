@@ -32,7 +32,7 @@
 @media screen and (min-width: 900px) {
   .wrapper .navLink {
     width: 450px;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 .wrapper .navLink:hover {
