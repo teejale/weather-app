@@ -25,17 +25,28 @@
 .navBar a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.3rem;
   background-color: #ffffff;
   border-radius: 5px;
   color: #211e1e;
   padding: 3px;
 }
+@media screen and (min-width: 782px) {
+  .navBar a {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navBar a {
+    font-size: 2rem;
+  }
+}
 .navBar a:hover {
   font-weight: bold;
 }
 .navBar .activeLink {
-  visibility: hidden;
+  font-weight: bolder;
+  cursor: none;
 }
 
 @media screen and (max-width: 872px) {
