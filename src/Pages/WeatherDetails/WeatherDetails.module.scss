@@ -5,18 +5,10 @@
   min-height: 100vh;
   @include mainFlex(flex-start, column);
   text-align: center;
-  font-size: 1.2rem;
   color: #ffffff;
   background-image: url("../../images/jerome-pqfkN8WcdR8-unsplash.jpg");
   @include backgroundImg();
   h2 {
     margin: -120px 0 30px 0;
-  }
-
-  @media screen and (min-width: 782px) {
-    font-size: 1.3rem;
-  }
-
-  @media screen and (min-width: 900px) {
   }
 }

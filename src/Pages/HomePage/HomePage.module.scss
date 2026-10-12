@@ -21,12 +21,12 @@
       @include mainFlex(center, column);
       padding: 10px 20px 10px 20px;
       border-radius: 6px;
-      font-size: 1.5rem;
+      font-size: 0.8rem;
       @media screen and (min-width: 782px) {
-        font-size: 1.7rem;
+        font-size: 1rem;
       }
       @media screen and (min-width: 900px) {
-        font-size: 2rem;
+        font-size: 1.2rem;
       }
     }
   }

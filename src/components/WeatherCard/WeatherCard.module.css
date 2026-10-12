@@ -11,7 +11,7 @@
   padding: 0;
 }
 .wrapper .navLink {
-  width: 300px;
+  width: 200px;
   opacity: 0.96;
   background-color: rgb(15, 23, 138);
   display: flex;
@@ -21,18 +21,18 @@
   border-radius: 10px;
   padding: 15px;
   border: 2px solid #dcdce8;
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 @media screen and (min-width: 746px) {
   .wrapper .navLink {
-    width: 350px;
-    font-size: 1.2rem;
+    width: 300px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 900px) {
   .wrapper .navLink {
-    width: 450px;
-    font-size: 1.8rem;
+    width: 350px;
+    font-size: 1rem;
   }
 }
 .wrapper .navLink:hover {

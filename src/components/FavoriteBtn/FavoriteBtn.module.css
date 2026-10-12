@@ -9,7 +9,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 .wrapper .active {
   color: yellow;
@@ -26,6 +26,6 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */

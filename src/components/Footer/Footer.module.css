@@ -14,7 +14,7 @@
   text-decoration: none;
   color: #211e1e;
   margin-top: 30px;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 .footer a:hover {
   font-weight: bolder;
@@ -25,11 +25,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 900px) {
   .footer a {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=Footer.module.css.map */

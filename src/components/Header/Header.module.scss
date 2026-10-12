@@ -2,20 +2,19 @@
 @use "../../styles/variables" as *;
 .header {
   @include mainFlex(center, column);
-  font-size: 15px;
+  // font-size: 15px;
   margin: 0;
   padding: 0;
   h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 1.4rem;
     font-family: $header;
     font-weight: 400;
-    font-size: 2.5rem;
     @media screen and (min-width: 782px) {
-      font-size: 3rem;
+      font-size: 1.8rem;
     }
     @media screen and (min-width: 900px) {
-      font-size: 4rem;
+      font-size: 2.3rem;
     }
   }
 }

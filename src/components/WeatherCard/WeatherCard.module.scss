@@ -7,17 +7,17 @@
   margin: 0;
   padding: 0;
   .navLink {
-    width: 300px;
+    width: 200px;
     opacity: 0.96;
     @include card();
-    font-size: 1rem;
+    font-size: 0.6rem;
     @media screen and (min-width: 746px) {
-      width: 350px;
-      font-size: 1.2rem;
+      width: 300px;
+      font-size: 0.8rem;
     }
     @media screen and (min-width: 900px) {
-      width: 450px;
-      font-size: 1.8rem;
+      width: 350px;
+      font-size: 1rem;
     }
     &:hover {
       cursor: pointer;

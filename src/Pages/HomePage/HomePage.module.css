@@ -31,15 +31,15 @@
   flex-direction: column;
   padding: 10px 20px 10px 20px;
   border-radius: 6px;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 @media screen and (min-width: 782px) {
   .homepage .wrapper h2 {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 900px) {
   .homepage .wrapper h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=HomePage.module.css.map */
