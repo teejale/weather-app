@@ -9,27 +9,27 @@
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   input {
     @include mainFlex(center, column);
     border-radius: 5px;
-    height: 30px;
-    font-size: 1rem;
-    width: 300px;
+    height: 27px;
+    font-size: 0.6rem;
+    width: 250px;
     text-align: center;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     &:hover {
       border: 0.5px solid $dark;
     }
     @media screen and (min-width: 746px) {
-      width: 500px;
-      font-size: 1.5rem;
+      width: 300px;
+      font-size: 0.8rem;
     }
     @media screen and (min-width: 900px) {
-      width: 600px;
-      font-size: 1.9rem;
-      height: 60px;
+      width: 350px;
+      font-size: 1rem;
+      height: 40px;
     }
   }
   .searchBtn {
@@ -39,21 +39,22 @@
       padding: 10px 25px 10px 25px;
       margin-top: 30px;
       border-radius: 25px;
-      font-size: 1.2rem;
+      font-size: 0.5rem;
       border: 0.5px solid $grey;
-      width: 200px;
+      width: 100px;
       cursor: pointer;
       border-style: none;
+      letter-spacing: 0.1rem;
       &:hover {
         border: 0.5px solid $dark;
       }
       @media screen and (min-width: 746px) {
-        width: 240px;
-        font-size: 1.7rem;
+        width: 120px;
+        font-size: 0.8rem;
       }
       @media screen and (min-width: 900px) {
-        width: 450px;
-        font-size: 2rem;
+        width: 150px;
+        font-size: 1rem;
       }
     }
   }
@@ -63,27 +64,27 @@
     background-color: $warningColor;
     text-align: center;
     border-radius: 3px;
-    width: 300px;
-    font-size: 1.3rem;
+    width: 250px;
+    font-size: 0.8rem;
     @media screen and (min-width: 746px) {
-      width: 500px;
-      font-size: 1.7rem;
+      width: 300px;
+      font-size: 1rem;
     }
     @media screen and (min-width: 900px) {
-      font-size: 2rem;
-      width: 600px;
+      font-size: 1rem;
+      width: 350px;
     }
   }
 }
 
 .labelText {
   @include mainFlex(center, column);
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-weight: bold;
   @media screen and (min-width: 746px) {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
   @media screen and (min-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }

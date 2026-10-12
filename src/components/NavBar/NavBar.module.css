@@ -25,7 +25,7 @@
 .navBar a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 0.6rem;
   background-color: #ffffff;
   border-radius: 5px;
   color: #211e1e;
@@ -33,12 +33,12 @@
 }
 @media screen and (min-width: 782px) {
   .navBar a {
-    font-size: 1.7rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 900px) {
   .navBar a {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 .navBar a:hover {
@@ -61,7 +61,6 @@
     justify-content: space-evenly;
     align-items: center;
     height: 7vh;
-    font-size: 21px;
     gap: 200px;
   }
 }/*# sourceMappingURL=NavBar.module.css.map */

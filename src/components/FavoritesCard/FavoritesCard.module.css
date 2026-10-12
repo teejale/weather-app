@@ -1,15 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap");
+.favoritesWrapper h3 {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 746px) {
+  .favoritesWrapper h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .favoritesWrapper h3 {
+    font-size: 1.2rem;
+  }
+}
 .favoritesWrapper h2 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #211e1e;
   font-weight: 800;
   word-spacing: 1.2rem;
 }
 @media screen and (min-width: 900px) {
   .favoritesWrapper h2 {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 }
 .favoritesWrapper .homeFavoriteBtn {
@@ -32,7 +45,7 @@
   border-radius: 5px;
   text-align: center;
   margin-bottom: 15px;
-  width: 300px;
+  width: 250px;
   height: 200px;
 }
 .favoritesWrapper .favoritesCard p {
@@ -58,14 +71,13 @@
 }
 @media screen and (min-width: 746px) {
   .favoritesWrapper .favoritesCard {
-    padding: 30px;
-    width: 500px;
-    font-size: 1.7rem;
+    width: 300px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 900px) {
   .favoritesWrapper .favoritesCard {
-    width: 600px;
-    font-size: 2rem;
+    width: 400px;
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=FavoritesCard.module.css.map */

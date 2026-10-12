@@ -16,7 +16,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .form input {
   display: flex;
@@ -24,26 +24,26 @@
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  height: 30px;
-  font-size: 1rem;
-  width: 300px;
+  height: 27px;
+  font-size: 0.6rem;
+  width: 250px;
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .form input:hover {
   border: 0.5px solid #211e1e;
 }
 @media screen and (min-width: 746px) {
   .form input {
-    width: 500px;
-    font-size: 1.5rem;
+    width: 300px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 900px) {
   .form input {
-    width: 600px;
-    font-size: 1.9rem;
-    height: 60px;
+    width: 350px;
+    font-size: 1rem;
+    height: 40px;
   }
 }
 .form .searchBtn {
@@ -57,25 +57,26 @@
   padding: 10px 25px 10px 25px;
   margin-top: 30px;
   border-radius: 25px;
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   border: 0.5px solid #dcdce8;
-  width: 200px;
+  width: 100px;
   cursor: pointer;
   border-style: none;
+  letter-spacing: 0.1rem;
 }
 .form .searchBtn button:hover {
   border: 0.5px solid #211e1e;
 }
 @media screen and (min-width: 746px) {
   .form .searchBtn button {
-    width: 240px;
-    font-size: 1.7rem;
+    width: 120px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 900px) {
   .form .searchBtn button {
-    width: 450px;
-    font-size: 2rem;
+    width: 150px;
+    font-size: 1rem;
   }
 }
 .form .errorMsg {
@@ -84,19 +85,19 @@
   background-color: #daa410;
   text-align: center;
   border-radius: 3px;
-  width: 300px;
-  font-size: 1.3rem;
+  width: 250px;
+  font-size: 0.8rem;
 }
 @media screen and (min-width: 746px) {
   .form .errorMsg {
-    width: 500px;
-    font-size: 1.7rem;
+    width: 300px;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 900px) {
   .form .errorMsg {
-    font-size: 2rem;
-    width: 600px;
+    font-size: 1rem;
+    width: 350px;
   }
 }
 
@@ -105,16 +106,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 @media screen and (min-width: 746px) {
   .labelText {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 900px) {
   .labelText {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=SearchInput.module.css.map */
