@@ -5,18 +5,18 @@
   height: fit-content;
   @include mainFlex(space-between, column);
   margin-top: 30px;
+  font-size: 1.5rem;
   .active {
     color: yellow;
-    font-size: 25px;
   }
   .notActive {
     color: #000000;
-    font-size: 22.5px;
     :hover {
       cursor: pointer;
     }
   }
   @media screen and (min-width: 900px) {
     @include mainFlex(flex-end, row);
+    font-size: 2rem;
   }
 }

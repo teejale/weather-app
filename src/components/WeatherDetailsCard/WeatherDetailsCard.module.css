@@ -20,8 +20,6 @@
   font-size: 1.1rem;
   margin: 30px;
   width: 300px;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .container :nth-child(2) {
   margin-top: 20px;
@@ -37,23 +35,35 @@
 }
 @media screen and (min-width: 782px) {
   .container {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .container {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 700px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    font-size: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    height: 500px;
     margin-top: 100px;
   }
 }
 
 .homeFavoriteBtn {
   cursor: pointer !important;
+}
+
+.fa-star {
+  font-size: 2rem;
 }/*# sourceMappingURL=WeatherDetailsCard.module.css.map */

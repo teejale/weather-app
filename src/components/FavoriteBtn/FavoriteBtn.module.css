@@ -9,14 +9,13 @@
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+  font-size: 1.5rem;
 }
 .wrapper .active {
   color: yellow;
-  font-size: 25px;
 }
 .wrapper .notActive {
   color: #000000;
-  font-size: 22.5px;
 }
 .wrapper .notActive :hover {
   cursor: pointer;
@@ -27,5 +26,6 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=FavoriteBtn.module.css.map */
