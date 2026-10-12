@@ -22,8 +22,12 @@ const FavoritesCard = () => {
 
   return (
     <div className={styles.favoritesWrapper}>
-      <h2>Favorites</h2>
-      {favoritesWeather.map((weather) => (
+      {favoritesWeather?.length >= 1 ? (
+        <h2>Favorites</h2>
+      ) : (
+        <h2>No saved favorites</h2>
+      )}
+      {favoritesWeather?.map((weather) => (
         <div key={weather.id} className={styles.favoritesCard}>
           <div className={styles.description}>
             <h3>{weather.name}</h3>
