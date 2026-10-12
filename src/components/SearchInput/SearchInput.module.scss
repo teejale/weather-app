@@ -77,6 +77,10 @@
 p {
   @include mainFlex(center, column);
   font-size: 1.3rem;
+  font-weight: bold;
+  @media screen and (min-width: 746px) {
+    font-size: 1.7rem;
+  }
   @media screen and (min-width: 900px) {
     font-size: 2rem;
   }
